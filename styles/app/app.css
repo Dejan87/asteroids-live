@@ -1,0 +1,209 @@
+/* PLUGINS */
+/* BASE STYLES */
+body, html {
+  background: url("../../assets/space.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+h1:after,
+h3:after {
+  display: block;
+  height: 2px;
+  background-color: #09046a;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px; }
+
+h3 {
+  padding-bottom: 30px; }
+
+.button {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 30px;
+  background-color: #09046a;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.button:hover {
+  background-color: #6B68A5; }
+
+button {
+  border: none;
+  display: inline-block;
+  color: #fff;
+  padding: 8px 20px;
+  background-color: #09046a;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 0 10px !important; }
+  @media screen and (max-width: 355px) {
+    button {
+      margin: 0 0 !important;
+      padding: 5px; } }
+
+button:hover {
+  background-color: #6B68A5; }
+
+button:focus {
+  outline: none; }
+
+.button--left-position {
+  margin-top: 30px;
+  position: relative;
+  left: 0; }
+
+.button--absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+
+input[type="date"],
+input[type="text"] {
+  border: none;
+  padding: 1px 5px; }
+
+input[type="date"]:focus,
+input[type="text"]:focus {
+  outline: none; }
+
+#pageNumber {
+  padding: 0 5px;
+  font-size: 1.2em; }
+
+/* LAYOUTS */
+header {
+  width: 70%;
+  margin: 50px auto;
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  color: #fff; }
+  @media screen and (max-width: 925px) {
+    header {
+      width: 95%; } }
+
+/* MODULES */
+.date-picker {
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 40px 0 40px 0;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff; }
+  @media screen and (max-width: 925px) {
+    .date-picker {
+      width: 95%; } }
+
+.date-picker__message,
+.asteroids__message {
+  padding-top: 20px; }
+
+.date-picker p {
+  padding-bottom: 20px; }
+
+.date-picker__choose span {
+  padding-right: 30px;
+  margin-bottom: 30px; }
+
+.date-picker__start-date,
+.date-picker__end-date {
+  margin-bottom: 30px; }
+
+.asteroids {
+  width: 70%;
+  margin: 50px auto 100px auto;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: none; }
+  @media screen and (max-width: 925px) {
+    .asteroids {
+      width: 95%; } }
+
+.table-head {
+  cursor: pointer; }
+
+.asteroids__list {
+  margin-top: 50px;
+  text-align: left;
+  padding: 15px; }
+
+.asteroids__list-preview {
+  color: #000;
+  padding: 10px 10px 50px 10px;
+  background-color: #fff; }
+
+.name {
+  display: inline-block;
+  margin-bottom: 10px; }
+
+.delete {
+  float: right;
+  cursor: pointer; }
+
+#languages {
+  position: relative;
+  left: 100px; }
+
+.chart {
+  position: relative;
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff; }
+  @media screen and (max-width: 925px) {
+    .chart {
+      width: 95%; } }
+
+.chart__asteroid {
+  width: 40%;
+  height: 30px;
+  margin-bottom: 10px; }
+
+#chart__asteroid {
+  display: inline-block;
+  width: 45%; }
+
+.chart__name {
+  display: inline-block;
+  text-align: right; }
+
+#chart__name {
+  display: inline-block;
+  width: 45%;
+  text-align: right; }
+
+.chart__number {
+  color: #000;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+  -webkit-transition-delay: 15s;
+          transition-delay: 15s; }
+
+.selectedAsteroid {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 0 6px 21px 0;
+  display: inline-block; }
